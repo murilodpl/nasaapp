@@ -1,84 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="form.css" />
-    
-    <title>Quarentine Garden</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Quarentine Garden</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="form.html">Formulário</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css" />
+
+  <title>Quarentine Garden</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Quarentine Garden</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="form.html">Formulário</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Niveis para visualizar
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="formNv2.html">Nivel 02</a>
+            <a class="dropdown-item" href="formNv3.html">Nivel 03</a>
+            <a class="dropdown-item" href="formNv4.html">Nivel 04</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="container contact-form">
+    <div class="contact-image">
+      <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+    </div>
+    <form method="post">
+      <h3>Nível 1 - Pessoal</h3>
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="form-group">
+            <label for="textName">01 - Qual seu nome?</label>
+            <input type="text" name="txtName" class="form-control" placeholder="Digite sua nome *" value=""
+              id="textName" />
+          </div>
+
+
+          <div class="form-group">
+            <label for="textAge">02 - Qual sua idade?</label>
+            <input type="text" name="txtAge" class="form-control" placeholder="Digite sua idade *" value=""
+              id="textAge" />
+          </div>
+
+
+          <div class="form-group">
+            <label for="selectCountry">03 - Em qual país você reside?</label>
+            <select class="form-control" id="selectCountry">
+              <option>Brasil</option>
+              <option>Estados Unidos</option>
+            </select>
+          </div>
+
+
+          <fieldset class="form-group">
+            <label>04 - Quão saudável é o seu ambiente físico?</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioFisico" id="inlineRadio141" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Ruim</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioFisico" id="inlineRadio142" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Regular</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioFisico" id="inlineRadio143" value="option3">
+              <label class="form-check-label" for="inlineRadio1">Bom</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioFisico" id="inlineRadio144" value="option4">
+              <label class="form-check-label" for="inlineRadio2">Muito Bom</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioFisico" id="inlineRadio145" value="option5">
+              <label class="form-check-label" for="inlineRadio1">Excelente</label>
+            </div>
+          </fieldset class="form-group">
+
+
+          <fieldset class="form-group">
+            <label>05 - Marque abaixo quais doenças você apresenta atualmente:(selecione todos os que se
+              aplicam)</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioDoenca" id="inlineRadio151" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Nenhuma Doença</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioDoenca" id="inlineRadio152" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Diabetes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioDoenca" id="inlineRadio153" value="option3">
+              <label class="form-check-label" for="inlineRadio1">Colesterol Alto</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioDoenca" id="inlineRadio154" value="option4">
+              <label class="form-check-label" for="inlineRadio2">Asma/bronquite/rinite</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioDoenca" id="inlineRadio155" value="option5">
+              <label class="form-check-label" for="inlineRadio1">Pressão Alta</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioDoenca" id="inlineRadio156" value="option6">
+              <label class="form-check-label" for="inlineRadio1">Problema cardiovascular</label>
+            </div>
+          </fieldset class="form-group">
+
+
+          <fieldset class="form-group">
+            <label>06 - Durante os últimos 6 meses, você viveu: (selecione todos os que se aplicam)</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioViveu" id="inlineRadio161" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Sozinho</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioViveu" id="inlineRadio162" value="option2">
+              <label class="form-check-label" for="inlineRadio2">País</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioViveu" id="inlineRadio163" value="option3">
+              <label class="form-check-label" for="inlineRadio1">Amigos</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioViveu" id="inlineRadio164" value="option4">
+              <label class="form-check-label" for="inlineRadio2">Parceiro</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioViveu" id="inlineRadio165" value="option5">
+              <label class="form-check-label" for="inlineRadio1">Outros</label>
+            </div>
+          </fieldset class="form-group">
+
+
+          <fieldset class="form-group">
+            <label>07 - Por favor, selecione o local que você mora:</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioCasa" id="inlineRadio171" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Apartamento</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioCasa" id="inlineRadio172" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Casa</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioCasa" id="inlineRadio173" value="option3">
+              <label class="form-check-label" for="inlineRadio1">Duplex</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioCasa" id="inlineRadio174" value="option4">
+              <label class="form-check-label" for="inlineRadio2">Campo</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioCasa" id="inlineRadio175" value="option5">
+              <label class="form-check-label" for="inlineRadio1">Residência estudantil</label>
+            </div>
+          </fieldset class="form-group">
+
+
+          <fieldset class="form-group">
+            <label>08 - Você toma algum medicamento?</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMedic" id="inlineRadio171" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Sim</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMedic" id="inlineRadio172" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Não</label>
+            </div>
+          </fieldset class="form-group">
+
+
+          <div class="form-group">
+            <label for="textHour">09 - Quais os horários que você precisa tomar estes medicamentos?</label>
+            <input type="text" name="txtHour" class="form-control" placeholder="Digite o horario *" value=""
+              id="textHour" />
+          </div>
+
+
+          <div class="form-group" align="center">
+            <input type="submit" name="btnSubmit" class="btnContact" value="Confirmar" />
+          </div>
         </div>
-      </nav>
-      
-
-      <div class="container contact-form">
-                  <div class="contact-image">
-                      <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-                  </div>
-                  <form method="post">
-                      <h3>Formulário</h3>
-                     <div class="row">
-                          <div class="col-md-12">
-                              <div class="form-group">
-                                  <label for="textName">Qual seu nome?</label>
-                                  <input type="text" name="txtName" class="form-control" placeholder="Digite sua nome *" value="" id="textName" />
-                              </div>
-                              <div class="form-group">
-                                  <label for="textAge">Qual sua idade?</label>
-                                  <input type="text" name="txtAge" class="form-control" placeholder="Digite sua idade *" value="" id="textAge" />
-                              </div>
-                              <div class="form-group">
-                                <label for="selectCountry">Em qual país você reside?</label>
-                                <select class="form-control" id="selectCountry">
-                                  <option>Brasil</option>
-                                  <option>Estados Unidos</option>
-                                </select>
-                              </div>
-                              <div class="form-group" align="center">
-                                  <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
-                              </div>
-                          </div>
-                      </div>
-                  </form>
       </div>
+    </form>
+  </div>
 
 
 
@@ -90,10 +221,17 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
