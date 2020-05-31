@@ -64,21 +64,51 @@
         <div class="col-md-12">
 
           <div class="form-group">
-            <label for="textName">01 - Qual seu nome?</label>
+            <label for="textCasa">01 - Qual casa de repouso trabalha?</label>
+            <select name="textCasa" class="form-control" placeholder="" value=""
+            id="textCasa">
+          <option value="0">Não</option>
+          <option value="1">Casa do João</option>
+          <option value="2">Joaquim Martim casa de repouso</option>
+          </select>
+          </div>
+
+          <fieldset class="form-group">
+            <label>02 -Selecione seus Assuntos de Interesse:</label><br>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkBoxAI1">
+                <label class="custom-control-label" for="checkBoxAI1">Ciências</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkBoxAI2">
+                <label class="custom-control-label" for="checkBoxAI2">Artes</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkBoxAI3">
+                <label class="custom-control-label" for="checkBoxAI3">Tecnologia</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkBoxAI4">
+                <label class="custom-control-label" for="checkBoxAI4">Assuntos Gerais</label>
+            </div>
+        </fieldset class="form-group">
+
+          <div class="form-group">
+            <label for="textName">03 - Qual seu nome?</label>
             <input type="text" name="txtName" class="form-control" placeholder="Digite sua nome *" value=""
               id="textName" />
           </div>
 
 
           <div class="form-group">
-            <label for="textAge">02 - Qual sua idade?</label>
+            <label for="textAge">04 - Qual sua idade?</label>
             <input type="text" name="txtAge" class="form-control" placeholder="Digite sua idade *" value=""
               id="textAge" />
           </div>
 
 
           <div class="form-group">
-            <label for="selectCountry">03 - Em qual país você reside?</label>
+            <label for="selectCountry">05 - Em qual país você reside?</label>
             <select class="form-control" id="selectCountry">
               <option>Brasil</option>
               <option>Estados Unidos</option>
@@ -87,7 +117,7 @@
 
 
           <fieldset class="form-group">
-            <label>04 - Quão saudável é o seu ambiente físico?</label><br>
+            <label>06 - Quão saudável é o seu ambiente físico?</label><br>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="radioFisico" id="inlineRadio141" value="option1">
               <label class="form-check-label" for="inlineRadio1">Ruim</label>
@@ -112,7 +142,7 @@
 
 
           <fieldset class="form-group">
-            <label>05 - Marque abaixo quais doenças você apresenta atualmente:(selecione todos os que se
+            <label>07 - Marque abaixo quais doenças você apresenta atualmente:(selecione todos os que se
               aplicam)</label><br>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="radioDoenca" id="inlineRadio151" value="option1">
@@ -142,7 +172,7 @@
 
 
           <fieldset class="form-group">
-            <label>06 - Durante os últimos 6 meses, você viveu: (selecione todos os que se aplicam)</label><br>
+            <label>08 - Durante os últimos 6 meses, você viveu: (selecione todos os que se aplicam)</label><br>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="radioViveu" id="inlineRadio161" value="option1">
               <label class="form-check-label" for="inlineRadio1">Sozinho</label>
@@ -167,7 +197,7 @@
 
 
           <fieldset class="form-group">
-            <label>07 - Por favor, selecione o local que você mora:</label><br>
+            <label>09 - Por favor, selecione o local que você mora:</label><br>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="radioCasa" id="inlineRadio171" value="option1">
               <label class="form-check-label" for="inlineRadio1">Apartamento</label>
@@ -192,7 +222,7 @@
 
 
           <fieldset class="form-group">
-            <label>08 - Você toma algum medicamento?</label><br>
+            <label>10 - Você toma algum medicamento?</label><br>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="radioMedic" id="inlineRadio171" value="option1">
               <label class="form-check-label" for="inlineRadio1">Sim</label>
@@ -205,7 +235,7 @@
 
 
           <div class="form-group">
-            <label for="textHour">09 - Quais os horários que você precisa tomar estes medicamentos?</label>
+            <label for="textHour">11 - Quais os horários que você precisa tomar estes medicamentos?</label>
             <input type="text" name="txtHour" class="form-control" placeholder="Digite o horario *" value=""
               id="textHour" />
           </div>
