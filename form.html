@@ -26,6 +26,9 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="praticar.html">Praticar <span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -65,33 +68,32 @@
 
           <div class="form-group">
             <label for="textCasa">01 - Qual casa de repouso trabalha?</label>
-            <select name="textCasa" class="form-control" placeholder="" value=""
-            id="textCasa">
-          <option value="0">Não</option>
-          <option value="1">Casa do João</option>
-          <option value="2">Joaquim Martim casa de repouso</option>
-          </select>
+            <select name="textCasa" class="form-control" placeholder="" value="" id="textCasa">
+              <option value="0">Não</option>
+              <option value="1">Casa do João</option>
+              <option value="2">Joaquim Martim casa de repouso</option>
+            </select>
           </div>
 
           <fieldset class="form-group">
             <label>02 -Selecione seus Assuntos de Interesse:</label><br>
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkBoxAI1">
-                <label class="custom-control-label" for="checkBoxAI1">Ciências</label>
+              <input type="checkbox" class="custom-control-input" id="checkBoxAI1">
+              <label class="custom-control-label" for="checkBoxAI1">Ciências</label>
             </div>
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkBoxAI2">
-                <label class="custom-control-label" for="checkBoxAI2">Artes</label>
+              <input type="checkbox" class="custom-control-input" id="checkBoxAI2">
+              <label class="custom-control-label" for="checkBoxAI2">Artes</label>
             </div>
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkBoxAI3">
-                <label class="custom-control-label" for="checkBoxAI3">Tecnologia</label>
+              <input type="checkbox" class="custom-control-input" id="checkBoxAI3">
+              <label class="custom-control-label" for="checkBoxAI3">Tecnologia</label>
             </div>
             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkBoxAI4">
-                <label class="custom-control-label" for="checkBoxAI4">Assuntos Gerais</label>
+              <input type="checkbox" class="custom-control-input" id="checkBoxAI4">
+              <label class="custom-control-label" for="checkBoxAI4">Assuntos Gerais</label>
             </div>
-        </fieldset class="form-group">
+          </fieldset class="form-group">
 
           <div class="form-group">
             <label for="textName">03 - Qual seu nome?</label>
@@ -242,20 +244,20 @@
 
 
           <div class="form-group" align="center">
-            <input type="submit" name="btnSubmit" class="btnContact" value="Confirmar" onclick="enviarForm()"/>
+            <input type="submit" name="btnSubmit" class="btnContact" value="Confirmar" onclick="enviarForm()" />
+          </div>
         </div>
-    </div>
-</div>
-</form>
-</div>
+      </div>
+    </form>
+  </div>
 
 
 
-<script>
-function enviarForm(){
-alert("Continue se apresentando para que possamos tornar sua experiência mais personalizada!");     
-}
-</script>
+  <script>
+    function enviarForm() {
+      alert("Continue se apresentando para que possamos tornar sua experiência mais personalizada!");
+    }
+  </script>
 
 
 
