@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/form.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.0/dist/sweetalert2.all.min.js"> </script>
+
     <title>Quarentine Garden</title>
 </head>
 
@@ -300,7 +302,7 @@
 
 
                     <div class="form-group" align="center">
-                        <input type="submit" name="btnSubmit" class="btnContact" value="Confirm" onclick="enviarForm()" />
+                        <input type="button" name="btnSubmit" class="btnContact" value="Confirm" onclick="enviarForm()" />
                     </div>
                 </div>
             </div>
@@ -311,8 +313,14 @@
 
     <script>
         function enviarForm() {
-            alert("You are progressing, congratulations!");
+            Swal.fire({
+            icon: 'success',
+            title: 'Thanks...',
+            text: 'You are progressing, congratulations!',
+            footer: '<a href>Thanks!</a>'
+          })
         }
+        
     </script>
 
 
