@@ -39,15 +39,15 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Cadastros
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cadastros
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="cCasaRepouso.html">Casa de Repouso</a>
-                      <a class="dropdown-item" href="cIdoso.html">Idosos</a>
+                        <a class="dropdown-item" href="cCasaRepouso.html">Casa de Repouso</a>
+                        <a class="dropdown-item" href="cIdoso.html">Idosos</a>
                     </div>
-                  </li>
+                </li>
             </ul>
         </div>
     </nav>
@@ -58,7 +58,7 @@
         <div class="contact-image">
             <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
         </div>
-        <form method="post">
+        <form method="post" onsubmit="somaPontos()">
             <h3>Nível 4 - Características físicas</h3>
             <div class="row">
                 <div class="col-md-12">
@@ -67,27 +67,27 @@
                         <label>01 - Você pratica exercícios físicos regularmente?</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosExercFisReg" id="inlineRadio411"
-                                value="option1">
+                                value="0">
                             <label class="form-check-label" for="inlineRadio1">Muito frequentemente</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosExercFisReg" id="inlineRadio412"
-                                value="option2">
+                                value="1">
                             <label class="form-check-label" for="inlineRadio2">Frequentemente</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosExercFisReg" id="inlineRadio413"
-                                value="option3">
+                                value="2">
                             <label class="form-check-label" for="inlineRadio1">Às vezes</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosExercFisReg" id="inlineRadio414"
-                                value="option4">
+                                value="3">
                             <label class="form-check-label" for="inlineRadio2">Muito raramente</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosExercFisReg" id="inlineRadio414"
-                                value="option4">
+                                value="4">
                             <label class="form-check-label" for="inlineRadio2">Nunca</label>
                         </div>
                     </fieldset class="form-group">
@@ -127,27 +127,27 @@
                         <label>03 - Há quanto tempo você pratica atividades regulares?</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosTempPraticAtiv" id="inlineRadio331"
-                                value="option1">
+                                value="0">
                             <label class="form-check-label" for="inlineRadio1">Mais de 2 anos</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosTempPraticAtiv" id="inlineRadio332"
-                                value="option2">
+                                value="1">
                             <label class="form-check-label" for="inlineRadio2">1 a 2 anos</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosTempPraticAtiv" id="inlineRadio333"
-                                value="option3">
+                                value="2">
                             <label class="form-check-label" for="inlineRadio1">3 a 12 meses</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosTempPraticAtiv" id="inlineRadio334"
-                                value="option4">
+                                value="3">
                             <label class="form-check-label" for="inlineRadio2">Menos de 3 meses</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosTempPraticAtiv" id="inlineRadio335"
-                                value="option4">
+                                value="4">
                             <label class="form-check-label" for="inlineRadio2">Não pratico</label>
                         </div>
                     </fieldset class="form-group">
@@ -158,22 +158,22 @@
                         <label>04 - Quantas horas por dia você pratica?</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosHorasPratic" id="inlineRadio441"
-                                value="option1">
+                                value="2">
                             <label class="form-check-label" for="inlineRadio1">15 minutos</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosHorasPratic" id="inlineRadio442"
-                                value="option2">
+                                value="1">
                             <label class="form-check-label" for="inlineRadio2">30 minutos</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosHorasPratic" id="inlineRadio443"
-                                value="option3">
+                                value="0">
                             <label class="form-check-label" for="inlineRadio1">Mais de 30 minutos</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosHorasPratic" id="inlineRadio444"
-                                value="option4">
+                                value="0">
                             <label class="form-check-label" for="inlineRadio2">1 hora ou mais</label>
                         </div>
                     </fieldset class="form-group">
@@ -209,6 +209,39 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script>
+        function somaPontos() {
+            var radioEFR = parseInt($("input[name='radiosExercFisReg']:checked").val());
+            var radioTPA = parseInt($("input[name='radiosTempPraticAtiv']:checked").val());
+            var radioHP = parseInt($("input[name='radiosHorasPratic']:checked").val());
+
+            //Caso Radio box não estiver selecionada, val = 0
+            if ($("input[name='radiosExercFisReg']:checked").prop("checked") != true) {
+                radioEFR = 0;
+            }
+            if ($("input[name='radiosTempPraticAtiv']:checked").prop("checked") != true) {
+                radioTPA = 0;
+            }
+            if ($("input[name='radiosHorasPratic']:checked").prop("checked") != true) {
+                radioHP = 0;
+            }
+
+            //Soma dos Radio box
+            var total = radioEFR + radioHP + radioTPA;
+
+            //Alert PopUp
+            if (total >= 7 && total <= 10) {
+                alert("Ruim, total: " + total);
+            }
+            if (total >= 4 && total <= 6) {
+                alert("Medio, total: " + total);
+            }
+            if (total >= 0 && total <= 3) {
+                alert("Ótimo, total: " + total);
+            }
+        }
+    </script>
 </body>
 
 </html>

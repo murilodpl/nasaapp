@@ -39,15 +39,15 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Cadastros
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cadastros
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="cCasaRepouso.html">Casa de Repouso</a>
-                      <a class="dropdown-item" href="cIdoso.html">Idosos</a>
+                        <a class="dropdown-item" href="cCasaRepouso.html">Casa de Repouso</a>
+                        <a class="dropdown-item" href="cIdoso.html">Idosos</a>
                     </div>
-                  </li>
+                </li>
             </ul>
         </div>
     </nav>
@@ -58,7 +58,7 @@
         <div class="contact-image">
             <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
         </div>
-        <form method="post">
+        <form method="post" onsubmit="somaPontos()">
             <h3>Nível 3 - Características Psicológicas</h3>
             <div class="row">
                 <div class="col-md-12">
@@ -67,19 +67,19 @@
                     <fieldset class="form-group">
                         <label>01 - Você tem sentimentos negativos tais como:</label><br>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="checkBox311">
+                            <input type="checkbox" class="custom-control-input" id="checkBox311" value="1">
                             <label class="custom-control-label" for="checkBox311">Mau humor</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="checkBox312">
+                            <input type="checkbox" class="custom-control-input" id="checkBox312" value="3">
                             <label class="custom-control-label" for="checkBox312">Desespero</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="checkBox313">
+                            <input type="checkbox" class="custom-control-input" id="checkBox313" value="1">
                             <label class="custom-control-label" for="checkBox313">Ansiedade</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="checkBox314">
+                            <input type="checkbox" class="custom-control-input" id="checkBox314" value="2">
                             <label class="custom-control-label" for="checkBox314">Depressão</label>
                         </div>
                     </fieldset class="form-group">
@@ -89,22 +89,22 @@
                         <label>02 - Com que frequência você tem esses sentimentos negativos?</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosPensNegat" id="inlineRadio321"
-                                value="option1">
+                                value="3">
                             <label class="form-check-label" for="inlineRadio1">Todo dia</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosPensNegat" id="inlineRadio322"
-                                value="option2">
+                                value="2">
                             <label class="form-check-label" for="inlineRadio2">5 vezes por semana</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosPensNegat" id="inlineRadio323"
-                                value="option3">
+                                value="1">
                             <label class="form-check-label" for="inlineRadio1">3 vezes por semana</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosPensNegat" id="inlineRadio324"
-                                value="option4">
+                                value="0">
                             <label class="form-check-label" for="inlineRadio2">1 vez por semana</label>
                         </div>
                     </fieldset class="form-group">
@@ -114,27 +114,27 @@
                         <label>03 - Como você avaliaria sua saúde mental nas últimas 4 semanas?</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosSaudeMent4Sem" id="inlineRadio331"
-                                value="option1">
+                                value="4">
                             <label class="form-check-label" for="inlineRadio1">Ruim</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosSaudeMent4Sem" id="inlineRadio332"
-                                value="option2">
+                                value="2">
                             <label class="form-check-label" for="inlineRadio2">Regular</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosSaudeMent4Sem" id="inlineRadio333"
-                                value="option3">
+                                value="1">
                             <label class="form-check-label" for="inlineRadio1">Bom</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosSaudeMent4Sem" id="inlineRadio334"
-                                value="option4">
+                                value="0">
                             <label class="form-check-label" for="inlineRadio2">Muito bom</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="radiosSaudeMent4Sem" id="inlineRadio335"
-                                value="option4">
+                                value="0">
                             <label class="form-check-label" for="inlineRadio2">Excelente</label>
                         </div>
                     </fieldset class="form-group">
@@ -172,6 +172,50 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script>
+        function somaPontos() {
+            var radioPN = parseInt($("input[name='radiosPensNegat']:checked").val());
+            var radioSM = parseInt($("input[name='radiosSaudeMent4Sem']:checked").val());
+
+            //Caso Radio box não estiver selecionada, val = 0
+            if ($("input[name='radiosPensNegat']:checked").prop("checked") != true) {
+                radioPN = 0;
+            }
+            if ($("input[name='radiosSaudeMent4Sem']:checked").prop("checked") != true) {
+                radioSM = 0;
+            }
+
+            //Soma dos Radio box
+            var total = radioPN + radioSM;
+
+            //Checkbox
+            if ($("input[id='checkBox311']:checked").prop("checked") == true) {
+                total += parseInt(($("input[id='checkBox311']:checked").val()));
+            }
+            if ($("input[id='checkBox312']:checked").prop("checked") == true) {
+                total += parseInt(($("input[id='checkBox312']:checked").val()));
+            }
+            if ($("input[id='checkBox313']:checked").prop("checked") == true) {
+                total += parseInt(($("input[id='checkBox313']:checked").val()));
+            }
+            if ($("input[id='checkBox314']:checked").prop("checked") == true) {
+                total += parseInt(($("input[id='checkBox314']:checked").val()));
+            }
+
+            //Alert PopUp
+            if (total >= 9 && total <= 14) {
+                alert("Ruim, total: " + total);
+            }
+            if (total >= 5 && total <= 8) {
+                alert("Medio, total: " + total);
+            }
+            if (total >= 1 && total <= 4) {
+                alert("Ótimo, total: " + total);
+            }
+        }
+
+    </script>
 </body>
 
 </html>
