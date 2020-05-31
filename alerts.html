@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.0/dist/sweetalert2.all.min.js"> </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Quarentine Garden</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Quarentine Garden</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="praticar.html">Practice <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Form
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="form.html">Level 01</a>
+                        <a class="dropdown-item" href="formNv2.html">Level 02</a>
+                        <a class="dropdown-item" href="formNv3.html">Level 03</a>
+                        <a class="dropdown-item" href="formNv4.html">Level 04</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Registrations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cCasaRepouso.html">Nursing Home</a>
+                        <a class="dropdown-item" href="cIdoso.html">Elderly</a>
+                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="alerts.html">Alerts <span class="sr-only">(current)</span></a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <img src="logoImage.jpg" />
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="col-sm">
+                <a class="dropdown-item " href="cCasaRepouso.html">
+                    <figure class="figure">
+                        <img src="nursinghome.jpeg" class="figure-img img-fluid rounded" width="300" height="300">
+                        <figcaption class="figure-caption" align="center">Nursing Home</figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm">
+                <a class="dropdown-item " href="cIdoso.html">
+                    <figure class="figure">
+                        <img src="elderly.jpeg" class="figure-img img-fluid rounded" width="300" height="300">
+                        <figcaption class="figure-caption" align="center">Elderly</figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm">
+                <a class="dropdown-item " href="praticar.html">
+                    <figure class="figure">
+                        <img src="practice.jpeg" class="figure-img img-fluid rounded" width="300" height="300">
+                        <figcaption class="figure-caption" align="center">Practice </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        /*
+        com 3 perguntas	 
+        Swal.mixin({
+          input: 'text',
+          confirmButtonText: 'Next &rarr;',
+          showCancelButton: true,
+          progressSteps: ['1', '2', '3']
+        }).queue([
+          {
+            title: 'Question 1',
+            text: 'Chaining swal2 modals is easy'
+          },
+          'Question 2',
+          'Question 3'
+        ]).then((result) => {
+          if (result.value) {
+            const answers = JSON.stringify(result.value)
+            Swal.fire({
+              title: 'All done!',
+              html: `
+                Your answers:
+                <pre><code>${answers}</code></pre>
+              `,
+              confirmButtonText: 'Lovely!'
+            })
+          }
+        })
+        */
+        function sw1() {
+            Swal.fire({
+                title: 'How do you feel today?',
+                icon: 'question',
+                input: 'range',
+                inputAttributes: {
+                    min: 10,
+                    max: 100,
+                    step: 1
+                },
+                inputValue: 25
+            })
+        }
+
+        function sw2() {
+            Swal.mixin({
+                input: 'text',
+                confirmButtonText: 'Next &rarr;',
+                showCancelButton: true,
+                progressSteps: ['1', '2', '3']
+            }).queue([
+                {
+                    title: 'Are you reading any book today?',
+                    text: 'Chaining swal2 modals is easy'
+                },
+                'There is a person in your region who likes this subject, would you like to share it??',
+                'Which page are you on?'
+            ]).then((result) => {
+                if (result.value) {
+                    const answers = JSON.stringify(result.value)
+                    Swal.fire({
+                        title: 'Congratulations!',
+                        html: `
+	        Your answers:
+	        <pre><code>${answers}</code></pre>
+	      `,
+                        confirmButtonText: 'Lovely!'
+                    })
+                }
+            })
+        }
+
+        function sw3() {
+            Swal.fire(
+                'How should i be to read a book?',
+                'Comfortably accommodated and preferably in a quiet place!',
+                'question'
+            )
+        }
+
+        function sw4() {
+            Swal.fire({
+                title: 'Would you like to share your experiences with everyone?',
+                text: "Success.",
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, i do.'
+            }).then((result) => {
+                if (result.value) {
+                    Swal.fire(
+                        'Congratulations',
+                        'You are inspiring a lot of people, congratulations!',
+                        'success'
+                    ), 50000
+                }
+            })
+        }
+
+        setTimeout(sw1, 5000)
+        setTimeout(sw2, 20000)
+        setTimeout(sw3, 35000)
+        setTimeout(sw4, 70000)
+
+
+
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
