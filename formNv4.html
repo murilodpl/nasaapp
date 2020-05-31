@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/form.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.0/dist/sweetalert2.all.min.js"> </script>
+
     <title>Quarentine Garden</title>
 </head>
 
@@ -184,7 +186,7 @@
 
 
                     <div class="form-group" align="center">
-                        <input type="submit" name="btnSubmit" class="btnContact" value="Confirm" />
+                        <input type="button" name="btnSubmit" class="btnContact" value="Confirm" onclick="somaPontos()"/>
                     </div>
                 </div>
             </div>
@@ -235,13 +237,31 @@
 
             //Alert PopUp
             if (total >= 7 && total <= 10) {
-                alert("Bad, total: " + total);
+                Swal.fire({
+                icon: 'fail',
+                title: 'OOpsss...',
+                text: 'Not Good!',
+                footer: '<a href>We help you to be best!</a>'
+                })   
+                //alert("Bad, total: " + total);
             }
             if (total >= 4 && total <= 6) {
-                alert("Medium, total: " + total);
+                Swal.fire({
+                icon: 'success',
+                title: 'Thanks...',
+                text: 'Good!',
+                footer: '<a href>We help you to be best!</a>'
+                })
+                //alert("Medium, total: " + total);
             }
             if (total >= 0 && total <= 3) {
-                alert("Great, total: " + total);
+                 Swal.fire({
+                icon: 'success',
+                title: 'Thanks...',
+                text: 'Very Good!',
+                footer: '<a href>Congratulations!</a>'
+                })
+                //alert("Great, total: " + total);
             }
         }
     </script>
